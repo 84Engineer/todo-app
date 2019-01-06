@@ -6,7 +6,12 @@ import { Model } from "./model";
 })
 export class AppComponent {
   model = new Model();
+  
   getName() {
     return this.model.user;
+  }
+
+  getTodoItems() {
+    return this.model.items;
   }
 }
